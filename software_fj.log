@@ -1,0 +1,760 @@
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Sistema Software FJ iniciado. Python 3.12.10
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Inicio de simulación del sistema Software FJ
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] GestorSistema inicializado. Listas en memoria creadas.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 01: Registro de cliente VÁLIDO
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=1, Nombre='María Fernanda González'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Cliente registrado → ID=1 | Nombre='María Fernanda González' | Email='maria.gonzalez@softwarefj.com'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=1, nombre='María Fernanda González'))
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'María Fernanda González' | ID: 10234567 | Sistema: #1
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Cliente registrado: María Fernanda González
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Obtener ficha de cliente'()
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Obtener ficha de cliente' → '==================================================\n  FICHA DE CLIENTE\n====...
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 02: Registro de cliente INVÁLIDO → nombre incompleto
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='nombre' | Valor='Carlos' | El nombre debe contener al menos 2 palabras y solo letras (sin números ni símbolos).
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 03: Registro de cliente INVÁLIDO → email malformado
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=2, Nombre='Luis Alberto Martínez'
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='email' | Valor='esto-no-es-un-email' | El email 'esto-no-es-un-email' no tiene un formato válido.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 04: Registro de cliente INVÁLIDO → identificación negativa
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=3, Nombre='Ana María Rodríguez'
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='identificacion' | Valor=-9999 | La identificación debe ser un número positivo.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 05: Creación de ReservaSala con parámetros ERRÓNEOS
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=4, Nombre='Sala Ejecutiva Premium'
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [A - precio negativo] [InvalidDataError] Campo='precio_base' | Valor=-50000.0 | El precio base debe ser mayor que cero.
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=5, Nombre='Sala Coworking Norte'
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=5 | Nombre='Sala Coworking Norte' | Precio base=30000.00 | Estado='disponible'
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [B - duración cero] [InvalidDataError] Campo='duracion_horas' | Valor=0 | La duración en horas debe ser un número positivo mayor que cero.
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=6, Nombre='Sala Innovación'
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=6 | Nombre='Sala Innovación' | Precio base=45000.00 | Estado='disponible'
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [C - número de sala vacío] [InvalidDataError] Campo='numero_sala' | Valor='' | El número de sala no puede estar vacío.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 06: Creación de servicios VÁLIDOS y segundo cliente
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=7, Nombre='Andrés Felipe Ospina'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Cliente registrado → ID=7 | Nombre='Andrés Felipe Ospina' | Email='andres.ospina@softwarefj.com'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=7, nombre='Andrés Felipe Ospina'))
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Andrés Felipe Ospina' | ID: 40567890 | Sistema: #7
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Cliente 2 registrado: Andrés Felipe Ospina
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=8, Nombre='Sala Directivos A-301'
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=8 | Nombre='Sala Directivos A-301' | Precio base=80000.00 | Estado='disponible'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ReservaSala creada: Sala='A-301' | Capacidad=12 | Duración=3.0h | Precio/h=$80000.00
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(ReservaSala(id=8, nombre='Sala Directivos A-301'))
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Sala Directivos A-301' [ReservaSala] | Precio base: $80000.00 COP
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Sala creada: Sala Directivos A-301
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'()
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 240000.0
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=9, Nombre='Portátil HP EliteBook - Alquiler'
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=9 | Nombre='Portátil HP EliteBook - Alquiler' | Precio base=35000.00 | Estado='disponible'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] AlquilerEquipo creado: 'Portátil' | Serie='HP-EB-2024-007' | Días=5 | Precio/día=$35000.00
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AlquilerEquipo(id=9, nombre='Portátil HP EliteBook - Alquiler'))
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Portátil HP EliteBook - Alquiler' [AlquilerEquipo] | Precio base: $35000.00 COP
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Equipo creado: Portátil HP EliteBook - Alquiler
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=10, Nombre='Asesoría en Ciberseguridad'
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=10 | Nombre='Asesoría en Ciberseguridad' | Precio base=250000.00 | Estado='disponible'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] AsesoriaEspecializada creada: 'Ciberseguridad' | Asesor='Ing. Roberto Vargas' | Sesiones=4 | Precio=$250000.00
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AsesoriaEspecializada(id=10, nombre='Asesoría en Ciberseguridad'))
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Asesoría en Ciberseguridad' [AsesoriaEspecializada] | Precio base: $250000.00 COP
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Asesoría creada: Asesoría en Ciberseguridad
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 07: Reserva EXITOSA → creación + confirmación
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=1, nombre='María Fernanda González'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), ...)
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(10234567)
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=1, nombre='María Fernanda González')
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Reserva #1 creada → Cliente: 'María Fernanda González' | Servicio: 'Sala Directivos A-301' | Inicio: 2026-05-14 23:56
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Intento de creación de reserva finalizado para cliente 'María Fernanda González'.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ Reserva #1 creada: Cliente='María Fernanda González' | Servicio='Sala Directivos A-301'
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=1, cliente='María Fernanda González', servicio='Sala Directivos A-...
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Reserva creada: [Reserva#0001] Cliente='María Fernanda González' | Servicio='Sala Directivos A-301' | Estado='pendiente' | Costo=$0.00
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(1)
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'(impuesto=0.19)
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 285600.0
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Reserva #1: estado 'pendiente' → 'confirmada' | Razón: Confirmación exitosa
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Proceso de confirmación finalizado para Reserva #1.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 285600.0
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 285600.0
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Reserva #1 CONFIRMADA → Costo: $285,600.00 COP
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 08: Reserva FALLIDA → servicio ya ocupado
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andrés Felipe Ospina'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), fec...)
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andrés Felipe Ospina')
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Intento de creación de reserva finalizado para cliente 'Andrés Felipe Ospina'.
+[2026-05-12 23:56:30] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Crear reserva': ServiceUnavailableError([ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' está en estado 'ocupado'.)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 272, in crear_reserva
+    nueva_reserva = Reserva(
+                    ^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 138, in __init__
+    raise ServiceUnavailableError(
+excepciones.ServiceUnavailableError: [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' está en estado 'ocupado'.
+
+[2026-05-12 23:56:30] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' está en estado 'ocupado'.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 09: Cancelación de reserva existente
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Cancelada por reorganización de agenda del cliente')
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Cancelada por reorganización de agenda del cliente')
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Reserva #1: estado 'confirmada' → 'cancelada' | Razón: Cancelada por reorganización de agenda del cliente
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] Servicio 'Sala Directivos A-301' liberado tras cancelación de Reserva #1.
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Proceso de cancelación finalizado para Reserva #1.
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva por ID' → None
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] OK Reserva #1 cancelada. Sala liberada: disponible
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Segundo intento de cancelación')
+[2026-05-12 23:56:30] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Segundo intento de cancelación')
+[2026-05-12 23:56:30] [DEBUG   ] [SoftwareFJ] Proceso de cancelación finalizado para Reserva #1.
+[2026-05-12 23:56:30] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 378, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 248, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-12 23:56:30] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva por ID': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 332, in cancelar_reserva
+    reserva.cancelar(motivo or "Cancelada desde el gestor del sistema")
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 378, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 248, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-12 23:56:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ═══ INICIO Operación 10: Sobrecarga de calcular_costo con impuesto + descuento
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19)
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 208250.0
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(descuento=0.1)
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 157500.0
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.1)
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 187425.0
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] OK Sobrecarga de equipo calculada exitosamente
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'(asesor_senior=True, impuesto=0.19, descuento=0.05)
+[2026-05-12 23:56:31] [DEBUG   ] [SoftwareFJ] Recargo senior (20%) aplicado. Costo base ajustado: $1200000.00
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1356600.0
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] OK Sobrecarga de asesoría calculada exitosamente
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=2.5)
+[2026-05-12 23:56:31] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Calcular costo AlquilerEquipo': InconsistentCalculationError([InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 563, in calcular_costo
+    return self._aplicar_modificadores(costo_base, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 228, in _aplicar_modificadores
+    raise InconsistentCalculationError(
+excepciones.InconsistentCalculationError: [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+
+[2026-05-12 23:56:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] Simulación completada exitosamente. Todas las operaciones ejecutadas.
+[2026-05-12 23:56:31] [INFO    ] [SoftwareFJ] Sistema Software FJ cerrado correctamente.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Sistema Software FJ iniciado. Python 3.12.10
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Inicio de simulacion del sistema Software FJ
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] GestorSistema inicializado. Listas en memoria creadas.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 01: Registro de cliente VALIDO
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=1, Nombre='Maria Fernanda Gonzalez'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Cliente registrado → ID=1 | Nombre='Maria Fernanda Gonzalez' | Email='maria.gonzalez@softwarefj.com'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=1, nombre='Maria Fernanda Gonzalez'))
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Maria Fernanda Gonzalez' | ID: 10234567 | Sistema: #1
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Cliente registrado: Maria Fernanda Gonzalez
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Obtener ficha de cliente'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Obtener ficha de cliente' → '==================================================\n  FICHA DE CLIENTE\n====...
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 02: Registro de cliente INVALIDO -> nombre incompleto
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='nombre' | Valor='Carlos' | El nombre debe contener al menos 2 palabras y solo letras (sin números ni símbolos).
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 03: Registro de cliente INVALIDO -> email malformado
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=2, Nombre='Luis Alberto Martinez'
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='email' | Valor='esto-no-es-un-email' | El email 'esto-no-es-un-email' no tiene un formato válido.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 04: Registro de cliente INVALIDO -> identificacion negativa
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=3, Nombre='Ana Maria Rodriguez'
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='identificacion' | Valor=-9999 | La identificación debe ser un número positivo.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 05: Creacion de ReservaSala con parametros ERRONEOS
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=4, Nombre='Sala Ejecutiva Premium'
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [A - precio negativo] [InvalidDataError] Campo='precio_base' | Valor=-50000.0 | El precio base debe ser mayor que cero.
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=5, Nombre='Sala Coworking Norte'
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=5 | Nombre='Sala Coworking Norte' | Precio base=30000.00 | Estado='disponible'
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [B - duracion cero] [InvalidDataError] Campo='duracion_horas' | Valor=0 | La duración en horas debe ser un número positivo mayor que cero.
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=6, Nombre='Sala Innovacion'
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=6 | Nombre='Sala Innovacion' | Precio base=45000.00 | Estado='disponible'
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [C - numero de sala vacio] [InvalidDataError] Campo='numero_sala' | Valor='' | El número de sala no puede estar vacío.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 06: Creacion de servicios VALIDOS y segundo cliente
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=7, Nombre='Andres Felipe Ospina'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Cliente registrado → ID=7 | Nombre='Andres Felipe Ospina' | Email='andres.ospina@softwarefj.com'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=7, nombre='Andres Felipe Ospina'))
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Andres Felipe Ospina' | ID: 40567890 | Sistema: #7
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Cliente 2 registrado: Andres Felipe Ospina
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=8, Nombre='Sala Directivos A-301'
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=8 | Nombre='Sala Directivos A-301' | Precio base=80000.00 | Estado='disponible'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ReservaSala creada: Sala='A-301' | Capacidad=12 | Duración=3.0h | Precio/h=$80000.00
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(ReservaSala(id=8, nombre='Sala Directivos A-301'))
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Sala Directivos A-301' [ReservaSala] | Precio base: $80000.00 COP
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Sala creada: Sala Directivos A-301
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 240000.0
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=9, Nombre='Portatil HP EliteBook - Alquiler'
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=9 | Nombre='Portatil HP EliteBook - Alquiler' | Precio base=35000.00 | Estado='disponible'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] AlquilerEquipo creado: 'Portatil' | Serie='HP-EB-2024-007' | Días=5 | Precio/día=$35000.00
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AlquilerEquipo(id=9, nombre='Portatil HP EliteBook - Alquiler'))
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Portatil HP EliteBook - Alquiler' [AlquilerEquipo] | Precio base: $35000.00 COP
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Equipo creado: Portatil HP EliteBook - Alquiler
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=10, Nombre='Asesoria en Ciberseguridad'
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=10 | Nombre='Asesoria en Ciberseguridad' | Precio base=250000.00 | Estado='disponible'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] AsesoriaEspecializada creada: 'Ciberseguridad' | Asesor='Ing. Roberto Vargas' | Sesiones=4 | Precio=$250000.00
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AsesoriaEspecializada(id=10, nombre='Asesoria en Ciberseguridad'))
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Asesoria en Ciberseguridad' [AsesoriaEspecializada] | Precio base: $250000.00 COP
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Asesoria creada: Asesoria en Ciberseguridad
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 07: Reserva EXITOSA -> creacion + confirmacion
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=1, nombre='Maria Fernanda Gonzalez'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), ...)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(10234567)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=1, nombre='Maria Fernanda Gonzalez')
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reserva #1 creada → Cliente: 'Maria Fernanda Gonzalez' | Servicio: 'Sala Directivos A-301' | Inicio: 2026-05-15 00:30
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Intento de creación de reserva finalizado para cliente 'Maria Fernanda Gonzalez'.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Reserva #1 creada: Cliente='Maria Fernanda Gonzalez' | Servicio='Sala Directivos A-301'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=1, cliente='Maria Fernanda Gonzalez', servicio='Sala Directivos A-...
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Reserva creada: [Reserva#0001] Cliente='Maria Fernanda Gonzalez' | Servicio='Sala Directivos A-301' | Estado='pendiente' | Costo=$0.00
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(1)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'(impuesto=0.19)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 285600.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reserva #1: estado 'pendiente' → 'confirmada' | Razón: Confirmación exitosa
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Proceso de confirmación finalizado para Reserva #1.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 285600.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 285600.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Reserva #1 CONFIRMADA -> Costo: $285,600.00 COP
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 08: Reserva FALLIDA -> servicio ya ocupado
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andres Felipe Ospina'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), fec...)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andres Felipe Ospina')
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Intento de creación de reserva finalizado para cliente 'Andres Felipe Ospina'.
+[2026-05-13 00:30:31] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Crear reserva': ServiceUnavailableError([ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' está en estado 'ocupado'.)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 272, in crear_reserva
+    nueva_reserva = Reserva(
+                    ^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 138, in __init__
+    raise ServiceUnavailableError(
+excepciones.ServiceUnavailableError: [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' está en estado 'ocupado'.
+
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' está en estado 'ocupado'.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 09: Cancelacion de reserva existente
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Cancelada por reorganizacion de agenda del cliente')
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Cancelada por reorganizacion de agenda del cliente')
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reserva #1: estado 'confirmada' → 'cancelada' | Razón: Cancelada por reorganizacion de agenda del cliente
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Servicio 'Sala Directivos A-301' liberado tras cancelación de Reserva #1.
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Proceso de cancelación finalizado para Reserva #1.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva por ID' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Reserva #1 cancelada. Sala liberada: disponible
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Segundo intento de cancelacion')
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Segundo intento de cancelacion')
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Proceso de cancelación finalizado para Reserva #1.
+[2026-05-13 00:30:31] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 378, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 248, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-13 00:30:31] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva por ID': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 332, in cancelar_reserva
+    reserva.cancelar(motivo or "Cancelada desde el gestor del sistema")
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 378, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 248, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] INICIO Operacion 10: Sobrecarga de calcular_costo con impuesto + descuento
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 208250.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(descuento=0.1)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 157500.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.1)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 187425.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Sobrecarga de equipo calculada exitosamente
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'(asesor_senior=True, impuesto=0.19, descuento=0.05)
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Recargo senior (20%) aplicado. Costo base ajustado: $1200000.00
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1356600.0
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Sobrecarga de asesoria calculada exitosamente
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=2.5)
+[2026-05-13 00:30:31] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Calcular costo AlquilerEquipo': InconsistentCalculationError([InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 563, in calcular_costo
+    return self._aplicar_modificadores(costo_base, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 228, in _aplicar_modificadores
+    raise InconsistentCalculationError(
+excepciones.InconsistentCalculationError: [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+
+[2026-05-13 00:30:31] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andres Felipe Ospina'), servicio=AlquilerEquipo(id=9, nombre='Portatil HP EliteBook - A...)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andres Felipe Ospina')
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reserva #2 creada → Cliente: 'Andres Felipe Ospina' | Servicio: 'Portatil HP EliteBook - Alquiler' | Inicio: 2026-05-18 00:30
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Intento de creación de reserva finalizado para cliente 'Andres Felipe Ospina'.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ Reserva #2 creada: Cliente='Andres Felipe Ospina' | Servicio='Portatil HP EliteBook - Alquiler'
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=2, cliente='Andres Felipe Ospina', servicio='Portatil HP EliteBook...
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(2)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.05)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 197837.5
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reserva #2: estado 'pendiente' → 'confirmada' | Razón: Confirmación exitosa
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Proceso de confirmación finalizado para Reserva #2.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 197837.5
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 197837.5
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Completar reserva por ID'(2)
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ▶ INICIO 'Completar reserva'()
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reserva #2: estado 'confirmada' → 'completada' | Razón: Servicio prestado exitosamente
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✅ Reserva #2 COMPLETADA → Servicio 'Portatil HP EliteBook - Alquiler' disponible nuevamente.
+[2026-05-13 00:30:31] [DEBUG   ] [SoftwareFJ] Proceso de completar finalizado para Reserva #2.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Completar reserva' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] ✔ FIN 'Completar reserva por ID' → None
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] OK Reserva bonus completada: [Reserva#0002] Cliente='Andres Felipe Ospina' | Servicio='Portatil HP EliteBook - Alquiler' | Estado='completada' | Costo=$197,837.50
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Reporte generado. Ingresos: $197837.50 COP
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Simulacion completada exitosamente. Todas las operaciones ejecutadas.
+[2026-05-13 00:30:31] [INFO    ] [SoftwareFJ] Sistema Software FJ cerrado correctamente.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Sistema Software FJ iniciado. Python 3.12.10
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Inicio de simulacion del sistema Software FJ
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] GestorSistema inicializado. Listas en memoria creadas.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 01: Registro de cliente VALIDO
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=1, Nombre='Maria Fernanda Gonzalez'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Cliente registrado → ID=1 | Nombre='Maria Fernanda Gonzalez' | Email='maria.gonzalez@softwarefj.com'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=1, nombre='Maria Fernanda Gonzalez'))
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Maria Fernanda Gonzalez' | ID: 10234567 | Sistema: #1
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Cliente registrado: Maria Fernanda Gonzalez
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Obtener ficha de cliente'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Obtener ficha de cliente' → '==================================================\n  FICHA DE CLIENTE\n====...
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 02: Registro de cliente INVALIDO -> nombre incompleto
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='nombre' | Valor='Carlos' | El nombre debe contener al menos 2 palabras y solo letras (sin números ni símbolos).
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 03: Registro de cliente INVALIDO -> email malformado
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=2, Nombre='Luis Alberto Martinez'
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='email' | Valor='esto-no-es-un-email' | El email 'esto-no-es-un-email' no tiene un formato válido.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 04: Registro de cliente INVALIDO -> identificacion negativa
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=3, Nombre='Ana Maria Rodriguez'
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='identificacion' | Valor=-9999 | La identificación debe ser un número positivo.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 05: Creacion de ReservaSala con parametros ERRONEOS
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=4, Nombre='Sala Ejecutiva Premium'
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [A - precio negativo] [InvalidDataError] Campo='precio_base' | Valor=-50000.0 | El precio base debe ser mayor que cero.
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=5, Nombre='Sala Coworking Norte'
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=5 | Nombre='Sala Coworking Norte' | Precio base=30000.00 | Estado='disponible'
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [B - duracion cero] [InvalidDataError] Campo='duracion_horas' | Valor=0 | La duración en horas debe ser un número positivo mayor que cero.
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=6, Nombre='Sala Innovacion'
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=6 | Nombre='Sala Innovacion' | Precio base=45000.00 | Estado='disponible'
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [C - numero de sala vacio] [InvalidDataError] Campo='numero_sala' | Valor='' | El número de sala no puede estar vacío.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 06: Creacion de servicios VALIDOS y segundo cliente
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=7, Nombre='Andres Felipe Ospina'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Cliente registrado → ID=7 | Nombre='Andres Felipe Ospina' | Email='andres.ospina@softwarefj.com'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=7, nombre='Andres Felipe Ospina'))
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Andres Felipe Ospina' | ID: 40567890 | Sistema: #7
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Cliente 2 registrado: Andres Felipe Ospina
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=8, Nombre='Sala Directivos A-301'
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=8 | Nombre='Sala Directivos A-301' | Precio base=80000.00 | Estado='disponible'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ReservaSala creada: Sala='A-301' | Capacidad=12 | Duración=3.0h | Precio/h=$80000.00
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(ReservaSala(id=8, nombre='Sala Directivos A-301'))
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Sala Directivos A-301' [ReservaSala] | Precio base: $80000.00 COP
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Sala creada: Sala Directivos A-301
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 240000.0
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=9, Nombre='Portatil HP EliteBook - Alquiler'
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=9 | Nombre='Portatil HP EliteBook - Alquiler' | Precio base=35000.00 | Estado='disponible'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] AlquilerEquipo creado: 'Portatil' | Serie='HP-EB-2024-007' | Días=5 | Precio/día=$35000.00
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AlquilerEquipo(id=9, nombre='Portatil HP EliteBook - Alquiler'))
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Portatil HP EliteBook - Alquiler' [AlquilerEquipo] | Precio base: $35000.00 COP
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Equipo creado: Portatil HP EliteBook - Alquiler
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=10, Nombre='Asesoria en Ciberseguridad'
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=10 | Nombre='Asesoria en Ciberseguridad' | Precio base=250000.00 | Estado='disponible'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] AsesoriaEspecializada creada: 'Ciberseguridad' | Asesor='Ing. Roberto Vargas' | Sesiones=4 | Precio=$250000.00
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AsesoriaEspecializada(id=10, nombre='Asesoria en Ciberseguridad'))
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Asesoria en Ciberseguridad' [AsesoriaEspecializada] | Precio base: $250000.00 COP
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Asesoria creada: Asesoria en Ciberseguridad
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 07: Reserva EXITOSA -> creacion + confirmacion
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=1, nombre='Maria Fernanda Gonzalez'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), ...)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(10234567)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=1, nombre='Maria Fernanda Gonzalez')
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reserva #1 creada | Cliente: 'Maria Fernanda Gonzalez' | Servicio: 'Sala Directivos A-301' | Inicio: 2026-05-15 00:34
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Intento de creacion de reserva finalizado para cliente 'Maria Fernanda Gonzalez'.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Reserva #1 creada: Cliente='Maria Fernanda Gonzalez' | Servicio='Sala Directivos A-301'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=1, cliente='Maria Fernanda Gonzalez', servicio='Sala Directivos A-...
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Reserva creada: [Reserva#0001] Cliente='Maria Fernanda Gonzalez' | Servicio='Sala Directivos A-301' | Estado='pendiente' | Costo=$0.00
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(1)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'(impuesto=0.19)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 285600.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reserva #1: estado 'pendiente' -> 'confirmada' | Razon: Confirmacion exitosa
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] [OK] Reserva #1 CONFIRMADA | Costo total: $285,600.00 COP
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Proceso de confirmacion finalizado para Reserva #1.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 285600.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 285600.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Reserva #1 CONFIRMADA -> Costo: $285,600.00 COP
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 08: Reserva FALLIDA -> servicio ya ocupado
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andres Felipe Ospina'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), fec...)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andres Felipe Ospina')
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Intento de creacion de reserva finalizado para cliente 'Andres Felipe Ospina'.
+[2026-05-13 00:34:27] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Crear reserva': ServiceUnavailableError([ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' esta en estado 'ocupado'.)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 272, in crear_reserva
+    nueva_reserva = Reserva(
+                    ^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 141, in __init__
+    raise ServiceUnavailableError(
+excepciones.ServiceUnavailableError: [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' esta en estado 'ocupado'.
+
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' esta en estado 'ocupado'.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 09: Cancelacion de reserva existente
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Cancelada por reorganizacion de agenda del cliente')
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Cancelada por reorganizacion de agenda del cliente')
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reserva #1: estado 'confirmada' -> 'cancelada' | Razon: Cancelada por reorganizacion de agenda del cliente
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Servicio 'Sala Directivos A-301' liberado tras cancelacion de Reserva #1.
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Proceso de cancelacion finalizado para Reserva #1.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva por ID' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Reserva #1 cancelada. Sala liberada: disponible
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Segundo intento de cancelacion')
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Segundo intento de cancelacion')
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Proceso de cancelacion finalizado para Reserva #1.
+[2026-05-13 00:34:27] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 386, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 251, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-13 00:34:27] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva por ID': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 332, in cancelar_reserva
+    reserva.cancelar(motivo or "Cancelada desde el gestor del sistema")
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 386, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 251, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] INICIO Operacion 10: Sobrecarga de calcular_costo con impuesto + descuento
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 208250.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(descuento=0.1)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 157500.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.1)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 187425.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Sobrecarga de equipo calculada exitosamente
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'(asesor_senior=True, impuesto=0.19, descuento=0.05)
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Recargo senior (20%) aplicado. Costo base ajustado: $1200000.00
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1356600.0
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Sobrecarga de asesoria calculada exitosamente
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=2.5)
+[2026-05-13 00:34:27] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Calcular costo AlquilerEquipo': InconsistentCalculationError([InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 563, in calcular_costo
+    return self._aplicar_modificadores(costo_base, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 228, in _aplicar_modificadores
+    raise InconsistentCalculationError(
+excepciones.InconsistentCalculationError: [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+
+[2026-05-13 00:34:27] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andres Felipe Ospina'), servicio=AlquilerEquipo(id=9, nombre='Portatil HP EliteBook - A...)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andres Felipe Ospina')
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reserva #2 creada | Cliente: 'Andres Felipe Ospina' | Servicio: 'Portatil HP EliteBook - Alquiler' | Inicio: 2026-05-18 00:34
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Intento de creacion de reserva finalizado para cliente 'Andres Felipe Ospina'.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ Reserva #2 creada: Cliente='Andres Felipe Ospina' | Servicio='Portatil HP EliteBook - Alquiler'
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=2, cliente='Andres Felipe Ospina', servicio='Portatil HP EliteBook...
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(2)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.05)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 197837.5
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reserva #2: estado 'pendiente' -> 'confirmada' | Razon: Confirmacion exitosa
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] [OK] Reserva #2 CONFIRMADA | Costo total: $197,837.50 COP
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Proceso de confirmacion finalizado para Reserva #2.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 197837.5
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 197837.5
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Completar reserva por ID'(2)
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ▶ INICIO 'Completar reserva'()
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reserva #2: estado 'confirmada' -> 'completada' | Razon: Servicio prestado exitosamente
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] [OK] Reserva #2 COMPLETADA | Servicio 'Portatil HP EliteBook - Alquiler' disponible nuevamente.
+[2026-05-13 00:34:27] [DEBUG   ] [SoftwareFJ] Proceso de completar finalizado para Reserva #2.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Completar reserva' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] ✔ FIN 'Completar reserva por ID' → None
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] OK Reserva bonus completada: [Reserva#0002] Cliente='Andres Felipe Ospina' | Servicio='Portatil HP EliteBook - Alquiler' | Estado='completada' | Costo=$197,837.50
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Reporte generado. Ingresos: $197837.50 COP
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Simulacion completada exitosamente. Todas las operaciones ejecutadas.
+[2026-05-13 00:34:27] [INFO    ] [SoftwareFJ] Sistema Software FJ cerrado correctamente.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Sistema Software FJ iniciado. Python 3.12.10
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Inicio de simulacion del sistema Software FJ
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] GestorSistema inicializado. Listas en memoria creadas.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 01: Registro de cliente VALIDO
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=1, Nombre='Maria Fernanda Gonzalez'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Cliente registrado → ID=1 | Nombre='Maria Fernanda Gonzalez' | Email='maria.gonzalez@softwarefj.com'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=1, nombre='Maria Fernanda Gonzalez'))
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Maria Fernanda Gonzalez' | ID: 10234567 | Sistema: #1
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Cliente registrado: Maria Fernanda Gonzalez
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Obtener ficha de cliente'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Obtener ficha de cliente' → '==================================================\n  FICHA DE CLIENTE\n====...
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 02: Registro de cliente INVALIDO -> nombre incompleto
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='nombre' | Valor='Carlos' | El nombre debe contener al menos 2 palabras y solo letras (sin números ni símbolos).
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 03: Registro de cliente INVALIDO -> email malformado
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=2, Nombre='Luis Alberto Martinez'
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='email' | Valor='esto-no-es-un-email' | El email 'esto-no-es-un-email' no tiene un formato válido.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 04: Registro de cliente INVALIDO -> identificacion negativa
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=3, Nombre='Ana Maria Rodriguez'
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidDataError] Campo='identificacion' | Valor=-9999 | La identificación debe ser un número positivo.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 05: Creacion de ReservaSala con parametros ERRONEOS
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=4, Nombre='Sala Ejecutiva Premium'
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [A - precio negativo] [InvalidDataError] Campo='precio_base' | Valor=-50000.0 | El precio base debe ser mayor que cero.
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=5, Nombre='Sala Coworking Norte'
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=5 | Nombre='Sala Coworking Norte' | Precio base=30000.00 | Estado='disponible'
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [B - duracion cero] [InvalidDataError] Campo='duracion_horas' | Valor=0 | La duración en horas debe ser un número positivo mayor que cero.
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=6, Nombre='Sala Innovacion'
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=6 | Nombre='Sala Innovacion' | Precio base=45000.00 | Estado='disponible'
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [C - numero de sala vacio] [InvalidDataError] Campo='numero_sala' | Valor='' | El número de sala no puede estar vacío.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 06: Creacion de servicios VALIDOS y segundo cliente
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=7, Nombre='Andres Felipe Ospina'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Cliente registrado → ID=7 | Nombre='Andres Felipe Ospina' | Email='andres.ospina@softwarefj.com'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Registrar cliente'(Cliente(id=7, nombre='Andres Felipe Ospina'))
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Cliente registrado: 'Andres Felipe Ospina' | ID: 40567890 | Sistema: #7
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Registrar cliente' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Cliente 2 registrado: Andres Felipe Ospina
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=8, Nombre='Sala Directivos A-301'
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=8 | Nombre='Sala Directivos A-301' | Precio base=80000.00 | Estado='disponible'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ReservaSala creada: Sala='A-301' | Capacidad=12 | Duración=3.0h | Precio/h=$80000.00
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(ReservaSala(id=8, nombre='Sala Directivos A-301'))
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Sala Directivos A-301' [ReservaSala] | Precio base: $80000.00 COP
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Sala creada: Sala Directivos A-301
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 240000.0
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=9, Nombre='Portatil HP EliteBook - Alquiler'
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=9 | Nombre='Portatil HP EliteBook - Alquiler' | Precio base=35000.00 | Estado='disponible'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] AlquilerEquipo creado: 'Portatil' | Serie='HP-EB-2024-007' | Días=5 | Precio/día=$35000.00
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AlquilerEquipo(id=9, nombre='Portatil HP EliteBook - Alquiler'))
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Portatil HP EliteBook - Alquiler' [AlquilerEquipo] | Precio base: $35000.00 COP
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Equipo creado: Portatil HP EliteBook - Alquiler
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Entidad creada: ID=10, Nombre='Asesoria en Ciberseguridad'
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Servicio creado: ID=10 | Nombre='Asesoria en Ciberseguridad' | Precio base=250000.00 | Estado='disponible'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] AsesoriaEspecializada creada: 'Ciberseguridad' | Asesor='Ing. Roberto Vargas' | Sesiones=4 | Precio=$250000.00
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Agregar servicio'(AsesoriaEspecializada(id=10, nombre='Asesoria en Ciberseguridad'))
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Servicio agregado: 'Asesoria en Ciberseguridad' [AsesoriaEspecializada] | Precio base: $250000.00 COP
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Agregar servicio' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Asesoria creada: Asesoria en Ciberseguridad
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 07: Reserva EXITOSA -> creacion + confirmacion
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=1, nombre='Maria Fernanda Gonzalez'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), ...)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(10234567)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=1, nombre='Maria Fernanda Gonzalez')
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reserva #1 creada | Cliente: 'Maria Fernanda Gonzalez' | Servicio: 'Sala Directivos A-301' | Inicio: 2026-05-15 02:19
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Intento de creacion de reserva finalizado para cliente 'Maria Fernanda Gonzalez'.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Reserva #1 creada: Cliente='Maria Fernanda Gonzalez' | Servicio='Sala Directivos A-301'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=1, cliente='Maria Fernanda Gonzalez', servicio='Sala Directivos A-...
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Reserva creada: [Reserva#0001] Cliente='Maria Fernanda Gonzalez' | Servicio='Sala Directivos A-301' | Estado='pendiente' | Costo=$0.00
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(1)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo ReservaSala'(impuesto=0.19)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo ReservaSala' → 285600.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reserva #1: estado 'pendiente' -> 'confirmada' | Razon: Confirmacion exitosa
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] [OK] Reserva #1 CONFIRMADA | Costo total: $285,600.00 COP
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Proceso de confirmacion finalizado para Reserva #1.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 285600.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 285600.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Reserva #1 CONFIRMADA -> Costo: $285,600.00 COP
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 08: Reserva FALLIDA -> servicio ya ocupado
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andres Felipe Ospina'), servicio=ReservaSala(id=8, nombre='Sala Directivos A-301'), fec...)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andres Felipe Ospina')
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Intento de creacion de reserva finalizado para cliente 'Andres Felipe Ospina'.
+[2026-05-13 02:19:26] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Crear reserva': ServiceUnavailableError([ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' esta en estado 'ocupado'.)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 272, in crear_reserva
+    nueva_reserva = Reserva(
+                    ^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 141, in __init__
+    raise ServiceUnavailableError(
+excepciones.ServiceUnavailableError: [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' esta en estado 'ocupado'.
+
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [ServiceUnavailableError] Servicio='Sala Directivos A-301' | Motivo: El servicio 'Sala Directivos A-301' esta en estado 'ocupado'.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 09: Cancelacion de reserva existente
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Cancelada por reorganizacion de agenda del cliente')
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Cancelada por reorganizacion de agenda del cliente')
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reserva #1: estado 'confirmada' -> 'cancelada' | Razon: Cancelada por reorganizacion de agenda del cliente
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Servicio 'Sala Directivos A-301' liberado tras cancelacion de Reserva #1.
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Proceso de cancelacion finalizado para Reserva #1.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Cancelar reserva por ID' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Reserva #1 cancelada. Sala liberada: disponible
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva por ID'(id_reserva=1, motivo='Segundo intento de cancelacion')
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Cancelar reserva'('Segundo intento de cancelacion')
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Proceso de cancelacion finalizado para Reserva #1.
+[2026-05-13 02:19:26] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 386, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 251, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-13 02:19:26] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Cancelar reserva por ID': InvalidReservationStateError([InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada'')
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\gestor.py", line 332, in cancelar_reserva
+    reserva.cancelar(motivo or "Cancelada desde el gestor del sistema")
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 386, in cancelar
+    self.__cambiar_estado("cancelada", motivo)
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\reserva.py", line 251, in __cambiar_estado
+    raise InvalidReservationStateError(
+excepciones.InvalidReservationStateError: [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InvalidReservationStateError] Estado='cancelada' | Operación='cambiar a 'cancelada''
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] INICIO Operacion 10: Sobrecarga de calcular_costo con impuesto + descuento
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 175000.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 208250.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(descuento=0.1)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 157500.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.1)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 187425.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Sobrecarga de equipo calculada exitosamente
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1000000.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AsesoriaEspecializada'(asesor_senior=True, impuesto=0.19, descuento=0.05)
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Recargo senior (20%) aplicado. Costo base ajustado: $1200000.00
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AsesoriaEspecializada' → 1356600.0
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Sobrecarga de asesoria calculada exitosamente
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=2.5)
+[2026-05-13 02:19:26] [ERROR   ] [SoftwareFJ] ✘ ERROR en 'Calcular costo AlquilerEquipo': InconsistentCalculationError([InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].)
+Traceback (most recent call last):
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\logger.py", line 149, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 563, in calcular_costo
+    return self._aplicar_modificadores(costo_base, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sari\Documents\Tareas Unad\Programación\Tarea 4\servicios.py", line 228, in _aplicar_modificadores
+    raise InconsistentCalculationError(
+excepciones.InconsistentCalculationError: [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+
+[2026-05-13 02:19:26] [WARNING ] [SoftwareFJ] FALLO [Capturado correctamente] [InconsistentCalculationError] Operación='aplicar_impuesto' | La tasa de impuesto 2.5 está fuera del rango válido [0.0, 1.0].
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Crear reserva'(cliente=Cliente(id=7, nombre='Andres Felipe Ospina'), servicio=AlquilerEquipo(id=9, nombre='Portatil HP EliteBook - A...)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Buscar cliente por identificación'(40567890)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Buscar cliente por identificación' → Cliente(id=7, nombre='Andres Felipe Ospina')
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reserva #2 creada | Cliente: 'Andres Felipe Ospina' | Servicio: 'Portatil HP EliteBook - Alquiler' | Inicio: 2026-05-18 02:19
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Intento de creacion de reserva finalizado para cliente 'Andres Felipe Ospina'.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ Reserva #2 creada: Cliente='Andres Felipe Ospina' | Servicio='Portatil HP EliteBook - Alquiler'
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Crear reserva' → Reserva(id=2, cliente='Andres Felipe Ospina', servicio='Portatil HP EliteBook...
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva por ID'(2)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Confirmar reserva'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Calcular costo AlquilerEquipo'(impuesto=0.19, descuento=0.05)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Calcular costo AlquilerEquipo' → 197837.5
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reserva #2: estado 'pendiente' -> 'confirmada' | Razon: Confirmacion exitosa
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] [OK] Reserva #2 CONFIRMADA | Costo total: $197,837.50 COP
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Proceso de confirmacion finalizado para Reserva #2.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva' → 197837.5
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Confirmar reserva por ID' → 197837.5
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Completar reserva por ID'(2)
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ▶ INICIO 'Completar reserva'()
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reserva #2: estado 'confirmada' -> 'completada' | Razon: Servicio prestado exitosamente
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] [OK] Reserva #2 COMPLETADA | Servicio 'Portatil HP EliteBook - Alquiler' disponible nuevamente.
+[2026-05-13 02:19:26] [DEBUG   ] [SoftwareFJ] Proceso de completar finalizado para Reserva #2.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Completar reserva' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] ✔ FIN 'Completar reserva por ID' → None
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] OK Reserva bonus completada: [Reserva#0002] Cliente='Andres Felipe Ospina' | Servicio='Portatil HP EliteBook - Alquiler' | Estado='completada' | Costo=$197,837.50
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Reporte generado. Ingresos: $197837.50 COP
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Simulacion completada exitosamente. Todas las operaciones ejecutadas.
+[2026-05-13 02:19:26] [INFO    ] [SoftwareFJ] Sistema Software FJ cerrado correctamente.
